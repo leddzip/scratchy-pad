@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  githook-install:
+    desc: Install git hooks
+    cmds:
+      - cp githooks/commit-msg.py .git/hooks/commit-msg
+      - chmod +x .git/hooks/commit-msg
