@@ -4,11 +4,22 @@ version = "0.1.0"
 description = ""
 authors = ["none <none>"]
 readme = "README.md"
+packages = [
+    {include = "scratchy_pad_app"},
+    {include = "scratchy_pad_client"},
+    {include = "scripts"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+
+scratchy_pad_domain = { path = "scratchy_pad_domain", develop = true }
+scratchy_pad_adapters = { path = "scratchy_pad_adapters", develop = true }
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+server = "scratchy_pad_app.main:run"

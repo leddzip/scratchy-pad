@@ -1,0 +1,6 @@
+[tool.poetry]
+name = "scratchy_pad_adapters"
+version = "0.1.0"
+description = "Adapters"
+authors = [""]
+packages = [{ include = "scratchy_pad_adapters" }]

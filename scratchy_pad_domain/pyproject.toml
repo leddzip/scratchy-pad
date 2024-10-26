@@ -1,0 +1,6 @@
+[tool.poetry]
+name = "scratchy_pad_domain"
+version = "0.1.0"
+description = "Domain"
+authors = [""]
+packages = [{ include = "scratchy_pad_domain" }]
