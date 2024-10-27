@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+User --> (Toggle On managed application X \n while no managed application is active)
+User --> (Toggle On managed application X \n while managed application Y is active)
+User --> (Toggle Off active application X)
+
+@enduml

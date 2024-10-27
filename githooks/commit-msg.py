@@ -11,7 +11,7 @@ CONVENTIONAL_COMMIT_PATTERNS = {
     'chore': ['setup'],
     'fix': [],
     'feat': [],
-    'docs': [],
+    'docs': ['architecture'],
     'style': [],
     'refactor': [],
     'test': [],

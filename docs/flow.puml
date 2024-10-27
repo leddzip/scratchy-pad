@@ -1,0 +1,28 @@
+@startuml
+start
+
+:toggle name;
+if (window in store but does not exists anymore) then (yes)
+note left
+    Edge case. When a window is closed by the user
+    while still managed by the app
+end note
+    :remove window from store;
+endif
+if (window in the store) then (yes)
+    :manage window state (deactivate others if needed);
+    if (current active window is the same as the one to toggle) then (yes)
+        :deactivate window;
+    else
+        :deactivate current active window;
+        :activate the one to toggle;
+    endif
+else
+    if (there is one active window) then (yes)
+        :deactivate current active window;
+    endif
+    :open window;
+    :activate the window;
+endif
+end
+@enduml
