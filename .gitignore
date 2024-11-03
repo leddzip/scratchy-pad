@@ -2,3 +2,6 @@
 .idea/
 *.iml
 *.egg-info/
+scratchy_pad_app/api/
+scratchy_pad_client/api/
+**/__pycahce__/

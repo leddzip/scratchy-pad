@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service ToggleService {
+  rpc Toggle (ToggleRequest) returns (ToggleResponse);
+}
+
+message ToggleRequest {
+  string appName = 1;
+}
+
+message ToggleResponse {
+  string response = 1;
+}

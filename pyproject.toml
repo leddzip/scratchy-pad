@@ -11,10 +11,12 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.13"
 
 scratchy_pad_domain = { path = "scratchy_pad_domain", develop = true }
 scratchy_pad_adapters = { path = "scratchy_pad_adapters", develop = true }
+grpcio = "^1.67.1"
+grpcio-tools = "^1.67.1"
 
 
 [build-system]
@@ -22,4 +24,5 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-server = "scratchy_pad_app.main:run"
+serve = "scratchy_pad_app.main:run"
+generate-grpc = "scripts.generate_grpc:generate"
